@@ -53,6 +53,7 @@ img {
 
 .favorite:hover {
   color: crimson;
+  cursor: alias;
 }
 
 .image-row {
