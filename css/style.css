@@ -3,3 +3,96 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+img {
+  width: 100%;
+}
+
+.container {
+  margin: 0 auto;
+  width: 80%;
+  word-spacing: 8px;
+  text-align: center;
+}
+
+.container > * {
+  word-spacing: normal;
+  text-align: start;
+}
+
+.card {
+  width: calc(100% / 3 - 16px);
+  position: relative;
+  display: inline-block;
+  margin-top: 5px;
+}
+
+.second-image {
+  position: absolute;
+  top: 0;
+  display: none;
+}
+
+.card:hover .second-image {
+  display: block;
+}
+
+.favorite {
+  position: absolute;
+  top: 20px;
+  right: 0px;
+  background-color: white;
+  font-size: 40;
+  text-align: center;
+  line-height: 1.5em;
+  width: 1.5em;
+  height: 1.5em;
+}
+
+.card:hover .favorite {
+  color: crimson;
+}
+
+.image-row {
+  position: relative;
+}
+
+.chip-row {
+  font-size: 20px;
+  position: absolute;
+  bottom: 20px;
+}
+
+.chip-row > span {
+  padding: 8px;
+  display: inline-block;
+  color: white;
+}
+
+.fair {
+  background-color: seagreen;
+  font-weight: bold;
+}
+.discount {
+  background-color: crimson;
+}
+
+.details-row {
+  margin-top: 10px;
+}
+
+.product-brand {
+  color: rgb(56, 56, 56);
+  font-weight: 400;
+}
+
+.current-price {
+  display: inline;
+  color: crimson;
+}
+
+.previous-price {
+  display: inline;
+  color: rgb(56, 56, 56);
+  text-decoration: line-through;
+}
