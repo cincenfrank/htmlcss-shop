@@ -7,12 +7,17 @@
 img {
   width: 100%;
 }
+h2 {
+  text-overflow: ellipsis;
+  max-lines: 1;
+}
 
 .container {
   margin: 0 auto;
   width: 80%;
   word-spacing: 8px;
   text-align: center;
+  padding: 15px 0;
 }
 
 .container > * {
@@ -61,17 +66,21 @@ img {
   font-size: 20px;
   position: absolute;
   bottom: 20px;
+  color: white;
 }
 
 .chip-row > span {
   padding: 8px;
   display: inline-block;
-  color: white;
+  vertical-align: middle;
 }
 
-.fair {
+.fair::after {
+  content: "Sostenibilità";
   background-color: seagreen;
   font-weight: bold;
+  padding: 8px;
+  vertical-align: middle;
 }
 .discount {
   background-color: crimson;
@@ -81,9 +90,15 @@ img {
   margin-top: 10px;
 }
 
+.product-name {
+  text-transform: uppercase;
+  font-size: 22px;
+}
+
 .product-brand {
   color: rgb(56, 56, 56);
   font-weight: 400;
+  text-transform: capitalize;
 }
 
 .current-price {
