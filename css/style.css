@@ -7,10 +7,6 @@
 img {
   width: 100%;
 }
-h2 {
-  text-overflow: ellipsis;
-  max-lines: 1;
-}
 
 .container {
   margin: 0 auto;
@@ -30,6 +26,7 @@ h2 {
   position: relative;
   display: inline-block;
   margin-top: 5px;
+  vertical-align: top;
 }
 
 .second-image {
