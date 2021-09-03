@@ -51,7 +51,7 @@ img {
   height: 1.5em;
 }
 
-.card:hover .favorite {
+.favorite:hover {
   color: crimson;
 }
 
