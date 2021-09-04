@@ -4,16 +4,95 @@
   box-sizing: border-box;
 }
 
-img {
+nav *:not(nav > a) {
+  display: inline-block;
+  height: 100%;
+
+  vertical-align: top;
+}
+
+header {
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  width: 100%;
+  background-color: lightgray;
+  border-bottom: 1px solid gray;
+}
+
+nav {
+  height: 80px;
+  margin-top: 15px;
+}
+
+nav li a {
+  display: inline-block;
+  padding: 0 15px;
+  line-height: 80px;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+nav li a:visited {
+  color: black;
+  text-decoration: none;
+}
+
+nav li a:active {
+  color: rgb(83, 83, 83);
+  border-bottom: 2px solid rgb(83, 83, 83);
+}
+
+li a:hover {
+  border-bottom: 2px solid grey;
+  cursor: pointer;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  background-color: lightgray;
+  padding: 20px 0;
+  z-index: 0;
+}
+
+footer > * {
+  margin-top: 30px;
+}
+
+footer > span {
+  display: block;
+}
+
+body {
+  background-color: lightgray;
+}
+
+main {
+  position: relative;
+  background-color: white;
+  z-index: 1;
+}
+
+#logo {
+  margin-left: 50px;
+  margin-right: 50px;
+  padding-bottom: 8px;
+}
+
+.image-row > img {
   width: 100%;
 }
 
 .container {
-  margin: 0 auto;
+  margin: 0 auto 200px;
   width: 80%;
   word-spacing: 8px;
   text-align: center;
-  padding: 15px 0;
+  padding: 125px 0 15px;
 }
 
 .container > * {
